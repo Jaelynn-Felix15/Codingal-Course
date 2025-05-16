@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <p>Setting a default value to a function parameter.</p>
+    <p id="demo"></p>
+    <script>
+        function myfunction(x,y) {
+            if (y === undefined) {
+                y = 2;
+            }
+            var result = x* y
+            return result
+        }
+        document.getElementById("demo").innerHTML = myfunction(5);
+    </script>
+</body>
+
+</html>
